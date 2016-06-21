@@ -5,8 +5,8 @@ api: [1.6.0]
 author: DeBe
 
 commands:
- subinventory:
-  permission: debe.subinventory.cmd
+ echest:
+  permission: debe.echest.cmd
   description: SubInventory - Command
   usage: /SubInventory
 
@@ -15,6 +15,6 @@ permissions:
   default: op
   description: DeBePlugins
   children:
-   debe.subinventory.cmd:
+   debe.echest.cmd:
     default: true
-    description: SubInventory - Command
+    description: Enderchest - Command
