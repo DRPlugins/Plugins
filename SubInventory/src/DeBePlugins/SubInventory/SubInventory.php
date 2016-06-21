@@ -16,7 +16,7 @@ class SubInventory extends PluginBase{
 
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $sub){
 		$n = $sender->getName();
-		$m = "[SubInventory] ";
+		$m = "§bD§5R§8 >> §e ";
 		if($n == "CONSOLE"){
 			$sender->sendMessage($this->isKorean() ? $m . "게임내에서만 사용가능합니다.": $m . "Please run this command in-game");
 			return true;
@@ -34,7 +34,7 @@ class SubInventory extends PluginBase{
 		$this->si[$n] = $getInv;
 		$inv->setContents($setInv);
 		$this->saveYml();
-		$sender->sendMessage($this->isKorean() ? $m . "인벤토리가 교체되었습니다.": $m . "Inventory is change");
+		$sender->sendMessage($this->isKorean() ? $m . "인벤토리가 교체되었습니다.": $m . "EnderChest Changed");
 		return true;
 	}
 
